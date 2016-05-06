@@ -144,29 +144,29 @@ Now you can take a look at the manual.
 There are two main input formats for "input_file" and "test_file" in SVMTorch : an ASCII format, and a binary one.
 
 The ASCII format is the following:
-
+```
 <Number n of training/testing samples>  <Dimension d of each sample+1>
 <a11> <a12> <a13> .... <a1d> <a1_out>
  .
  .
  .
 <an1> <an2> <an3> .... <and> <an_out>
-
-where <aij> is an ASCII floating point number corresponding to the j-th value of the i-th example and <ai_out> is the i-th desired output (in classification, it should be +1/-1).
+```
+where `<aij>` is an ASCII floating point number corresponding to the j-th value of the i-th example and `<ai_out>` is the i-th desired output (in classification, it should be +1/-1).
 
 The binary format is the same, without carriage returns.
 
 There is another special input format for SVMTest, when you don't have the desired output. (To use with the -no option).
 
 The ASCII version of this format is :
-
+```
 <Number n of training/testing samples>  <Dimension d of each sample>
 <a11> <a12> <a13> .... <a1d>
  .
  .
  .
 <an1> <an2> <an3> .... <and>
-
+```
 The binary format is the same, without carriage returns.
 
 Check the manual for the sparse format, and the multiclass format.
